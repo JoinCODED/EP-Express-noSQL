@@ -1,0 +1,1 @@
+Express is a web framework based on Node.js. It's light-weight, high-performing, fast, unopinionated and minimalistic. We will be using it to build our APIs, as it provides us with countless HTTP utility methods and middleware, we can use to create a robust API.
