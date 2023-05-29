@@ -33,10 +33,7 @@ require('dotenv').config()
 
    ```javascript
    const connectDB = async () => {
-     const conn = await mongoose.connect(process.env.DB_HOST, {
-       useUnifiedTopology: true,
-       useNewUrlParser: true,
-     });
+     const conn = await mongoose.connect(process.env.DB_HOST);
      console.log(`mongo connected: ${conn.connection.host}`);
    };
    ```
