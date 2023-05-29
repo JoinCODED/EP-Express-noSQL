@@ -9,17 +9,14 @@
 3. Import the **mongoose** module.
 
    ```javascript
-   const mongoose = require("mongoose");
+   const mongoose = require('mongoose');
    ```
 
 4. Connect to your database using the connect method from mongoose.
 
    ```javascript
    const connectDB = async () => {
-     const conn = await mongoose.connect("YOUR_CONNECTION_STRING", {
-       useUnifiedTopology: true,
-       useNewUrlParser: true,
-     });
+     const conn = await mongoose.connect('YOUR_CONNECTION_STRING');
      console.log(`mongo connected: ${conn.connection.host}`);
    };
    ```
@@ -28,13 +25,13 @@
 
 ![Mongo](https://i.ibb.co/DrytF9K/app-overview-v8.png)
 
-6. A modal will open, select **Connect to your application**.
+6. A modal will open, select **Drivers**.
 
-![Mongo](https://i.ibb.co/59qBLJH/app-overview-v8.png)
+![Mongo](../assets/select_connection_type.PNG)
 
 7. Copy your connection string and replace it with the connection string from step 4. Don't forget to change `<password>`!
 
-![Mongo](https://i.ibb.co/7RT10Qc/app-overview-v8.png)
+![Mongo](../assets/node_connect.PNG)
 
 8. Export!
 
@@ -45,7 +42,7 @@
 9. In app.js import the file we just created.
 
    ```javascript
-   const connectDb = require("./database");
+   const connectDb = require('./database');
    ```
 
 10. Call our method anywhere before `app.listen`.
